@@ -211,6 +211,11 @@ import gsap from 'gsap'
 
 
 export default {
+  styleResources: {
+    scss: [
+      '~/assets/css/base-style.scss'
+    ]
+  },
   data() {
     return {
       openeds: ["1"],
