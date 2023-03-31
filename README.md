@@ -23,7 +23,7 @@ For detailed explanation on how things work, check out the [documentation](https
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.111111
 
-### `assets`
+### `assets`  
 
 The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
 
