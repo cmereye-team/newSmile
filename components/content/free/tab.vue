@@ -36,7 +36,7 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至31.1.2023）</td>
+              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
@@ -127,7 +127,7 @@
               <td><span>$95,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至31.1.2023）</td>
+              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$38,000*</span></td>
@@ -161,7 +161,7 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至31.1.2023）</td>
+              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
@@ -188,7 +188,7 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至31.1.2023）</td>
+              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
@@ -262,7 +262,7 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至31.1.2023）</td>
+              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
@@ -449,7 +449,7 @@
               <td><span>$29,000</span></td>
             </tr>
             <tr>
-              <td colspan="4" id="blue">優惠（即日至31.1.2023）</td>
+              <td colspan="4" id="blue">優惠（即日至30.4.2023）</td>
             </tr>
             <tr>
               <td><span>$12,500*</span></td>
