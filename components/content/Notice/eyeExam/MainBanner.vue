@@ -1,7 +1,12 @@
 <template>
   <div class="main_banner">
-    <banner class="banner">
+    <banner class="banner"> 
+      <template #title>
+        眼睛檢查及矯視前
+      </template>
     </banner>
+
+    
   </div>
 </template>
 <script>
@@ -9,7 +14,10 @@ import Banner from "@/components/commom/head/Banner.vue";
 export default {
   components: { Banner },
   data() {
-    return {};
+    return {
+       
+
+    };
   },
   created() { },
   methods: {}

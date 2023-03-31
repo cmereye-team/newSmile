@@ -3,7 +3,7 @@
     <div class="des_box">
       <h3 class="gradient_font">
         <slot name="title"></slot>
-      </h3>
+      </h3> 
       <p>
         <slot name="des"></slot>
       </p>
@@ -13,7 +13,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      
+    };
   },
   created() {},
   methods: {},
@@ -25,15 +27,26 @@ export default {
     height: 480px;
     background-size: cover !important;
     background-repeat: no-repeat;
-    padding-left: 63px;
+    padding-left: 164px;
     .des_box {
       width: 648px;
 
       margin-bottom: 75px;
 
       h3 {
-        font-weight: 700;
-        font-size: 28px;
+        font-family: 'Noto Sans HK';
+font-style: normal;
+font-weight: 500;
+font-size: 38px;
+ 
+/* identical to box height, or 87% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.15em;
+
+color: #4570B6;
       }
       p {
         font-family: "Noto Sans JP";
@@ -57,20 +70,22 @@ export default {
   .des_box {
     padding-left: 28px;
     h3 {
-      font-family: "Noto Sans HK";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 17px;
-      line-height: 15px;
-      /* or 125% */
+      font-family: 'Noto Sans HK';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 40px;
+/* or 143% */
 
-      letter-spacing: 0.1em;
+display: flex;
+align-items: center;
+letter-spacing: 0.15em;
 
-      background: linear-gradient(90.24deg, #4570b6 12.21%, #81dbec 87.2%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
+color: #4570B6;
+
+
+
+     
     }
     span {
       font-size: 11px;

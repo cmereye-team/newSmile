@@ -1,6 +1,9 @@
 <template>
   <div class="main_banner">
     <banner class="banner">
+      <template #title>
+        媒體報導
+      </template>
     </banner>
   </div>
 </template>
@@ -40,7 +43,7 @@ export default {
 @media screen and (min-width:768px){
 
   .banner {
-  background-image: url("https://static.cmereye.com/imgs/2022/12/0edea941aa0ff7d2.jpg");
+  background-image: url("https://static.cmereye.com/imgs/2023/03/f749408bdb90b101.jpg");
 }
 }
 

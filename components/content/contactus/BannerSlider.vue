@@ -1,6 +1,10 @@
 <template>
   <div class="main_banner">
-    <banner class="banner"></banner>
+    <banner class="banner">
+      <template #title>
+        聯絡我們
+      </template>
+    </banner>
   </div>
 </template>
 <script>

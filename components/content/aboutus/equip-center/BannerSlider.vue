@@ -1,6 +1,11 @@
 <template>
   <div class="main_banner">
-    <banner class="banner"></banner>
+    <banner class="banner">
+      <template #title>
+        中心設備
+      </template>
+
+    </banner>
   </div>
 </template>
 <script>
@@ -17,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 768px){
   .banner {
-  background: url("https://static.cmereye.com/imgs/2022/12/eb428dce818906a3.jpg") no-repeat;
+  background: url("https://static.cmereye.com/imgs/2023/03/ed84635b2f1f2200.jpg") no-repeat;
 }
 }
 @media (max-width: 768px){

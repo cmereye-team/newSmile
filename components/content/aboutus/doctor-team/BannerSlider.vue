@@ -1,6 +1,10 @@
 <template>
   <div class="main_banner">
-    <banner class="banner"></banner>
+    <banner class="banner">
+      <template #title>
+         醫生團隊
+      </template>
+    </banner>
   </div>
 </template>
 <script>
@@ -17,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 @media (min-width: 768px){
   .banner {
-  background: url("https://static.cmereye.com/imgs/2022/12/d8af6e40054d2684.jpg") no-repeat;
+  background: url("https://static.cmereye.com/imgs/2023/03/2e1a6f1385669d6f.jpg") no-repeat;
 }
 }
 @media (max-width: 768px){

@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (min-width: 768px) {
   .banner {
-    background-image: url("~/asset/image/service/relex_smile/banner_bg.jpg");
+    background-image: url("https://static.cmereye.com/imgs/2023/03/edaaa3deb3e5303a.jpg");
   }
 }
 @media screen and (max-width: 768px) {
