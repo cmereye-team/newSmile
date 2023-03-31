@@ -351,7 +351,7 @@ export default {
     .text_blue {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 800;
+      font-weight: 500;
       font-size: 23px !important;
       line-height: 23px;
       /* or 128% */
@@ -365,7 +365,7 @@ export default {
     .text_blue2 {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 16.5px;
       line-height: 23px;
       /* or 128% */
@@ -380,7 +380,7 @@ export default {
     span {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 800;
+      font-weight: 500;
       font-size: 23px;
       line-height: 30px;
       /* or 167% */
@@ -441,7 +441,7 @@ export default {
         h4 {
           font-size: 20px;
           margin-top: 40px;
-          font-weight: 900;
+          font-weight: 400;
         }
         .link {
           margin-top: 1.8vw;
@@ -478,10 +478,10 @@ export default {
               padding-left: 28px;
               i{font-style: normal;
               em{font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     border-bottom: 1px solid;}
               }
-              i:first-child{font-weight:bold;}
+              i:first-child{font-weight:400;}
               i:last-child{font-size:18px;}
             }
           }

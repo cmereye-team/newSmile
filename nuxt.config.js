@@ -23,7 +23,14 @@ export default {
       {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js'
       },
+      // vue-i18n
+      {
+        src: 'https://unpkg.com/vue-i18n/dist/vue-i18n.js'
+      },
     
+
+
+      
     ],
     meta: [
       { charset: 'utf-8' },
@@ -39,7 +46,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap' },
     
     ]
-  },    
+  },   
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

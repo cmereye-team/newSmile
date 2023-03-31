@@ -1,6 +1,8 @@
 <template>
   <div class="main_banner">
-    <banner class="banner"> </banner>
+    <banner class="banner">  <template #title>
+        預約服務
+      </template> </banner>
   </div>
 </template>
 <script>

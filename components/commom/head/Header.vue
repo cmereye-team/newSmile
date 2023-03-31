@@ -135,13 +135,20 @@
     </div>
 
     <div class="md: flex items-center">
-      <div class="nav_bar section hidden md:flex md:justify-between">
-        <ul class="nav md:flex md:justify-around grid gap-8">
+      <div class="nav_bar section hidden md:flex md:justify-between"  >
+
+        <!-- gsap   移动动画-->
+ 
+<!-- gsap   移动动画 end-->
+        <ul class="nav md:flex md:justify-around grid gap-8"  >
+          <div class="menu-line"></div>
+
+
           <li
             v-for="(navItem, index) in navList"
             :key="index"
             class="nav_item text-lg md:flex flex-col"
-            :class="navItem.child_list.length !== 0 ? 'main_after' : ''"
+            :class="navItem.child_list.length !== 0 ? 'main_after' : ''" 
           >
             <nuxt-link
               :to="navItem.link"
@@ -168,9 +175,14 @@
         <nuxt-link to="/booking" class="text-base ll_box nav-bookingservice  pcShow"
           >預約服務</nuxt-link
         >
-        <div class="flex items-center nav-language">
+        <div class="flex items-center nav-language group relative">
           <img src="../../../asset/image/common/Vector.png" alt="" />
+          <ul class="nav-language-box absolute top-10   hidden group-hover:block  "   >
+<li><a href="###">繁</a> </li>
+<li><a href="###">简</a> </li>
+          </ul>
         </div>
+
       </div>
       <div class="contact">
         <a href="https://api.whatsapp.com/send/?phone=85260610511">
@@ -195,8 +207,13 @@
       </div>
     </div>
 
-  
+<!-- gsap   指针动画-->
     <div class="ball"></div>
+<!-- gsap   指针动画 end-->
+
+ 
+
+
 
   </div>
 
@@ -207,10 +224,9 @@
 import gsap from 'gsap'
  
 
- 
-
 
 export default {
+  
   styleResources: {
     scss: [
       '~/assets/css/base-style.scss'
@@ -234,20 +250,7 @@ export default {
           img: require("@/asset/image/common/YT.svg"),
         },
       ],
-      languageList: [
-        {
-          link: "",
-          text: "繁",
-        },
-        {
-          link: "",
-          text: "簡",
-        },
-        {
-          link: "",
-          text: "ENG",
-        },
-      ],
+      
       navList: [
         {
           main_nav: "關於希瑪",
@@ -372,13 +375,53 @@ export default {
   },
   mounted() {
     this.pointinit();
+
+   // 获取菜单和菜单底部的横线元素
+const menu = document.querySelector(".nav ");
+const menuLine = document.querySelector(".menu-line");
+
+// 创建GSAP动画
+gsap.to(menuLine, {
+  duration: 0.3,
+  scaleX: 0,
+  transformOrigin: "right",
+  ease: "power1.inOut"
+});
+
+menu.addEventListener("mousemove", e => {
+  // 获取鼠标在菜单中的位置
+  const xPos = e.clientX - menu.offsetLeft;
+  
+  // 更新菜单底部横线的位置和宽度
+  gsap.to(menuLine, {
+    duration: 0.3,
+    scaleX: 1,
+    left: xPos,
+    transformOrigin: "left",
+    ease: "power1.inOut"
+  });
+});
+
+menu.addEventListener("mouseleave", () => {
+  // 鼠标离开菜单后，隐藏菜单底部横线
+  gsap.to(menuLine, {
+    duration: 0.3,
+    scaleX: 0,
+    transformOrigin: "right",
+    ease: "power1.inOut"
+  });
+});
+
+
   },
   onMounted(){
 
 },
   methods: {
+
+
+    
     pointinit(){
-      
  // mousemove ball 
  // 指针小球跟随效果
  gsap.set(".ball", {xPercent: -65, yPercent: -65});
@@ -451,8 +494,15 @@ export default {
 </script>
 <style lang="scss">
 .ball { position: fixed; pointer-events: none; z-index:9999; width: 20px; height: 20px; background-color: #f5f7fa; border-radius: 50%; mix-blend-mode: difference; left: 0;top: 0;}
- 
-
+ .nav {position: relative;}
+.menu-line {
+  height: 1px;
+  width: 50px;
+  background-color: #000;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
 
 
 $active_gradient: #4570b6;
@@ -462,7 +512,8 @@ $active_gradient: #4570b6;
 // pc
 @media (min-width: 768px) {
   .main_after .nuxt-link-active .mian_nav_text {color: #4570B6 !important;}
-
+  
+ 
 
   .nav {
     display: flex;
@@ -474,7 +525,7 @@ $active_gradient: #4570b6;
     border-radius: 0px;
     font-family: "Noto Sans HK";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 29px;
     /* identical to box height */
