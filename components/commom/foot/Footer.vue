@@ -28,7 +28,7 @@
       <div class="flex">
         <ul class="main_menu flex">
           <li
-            class="ml-24 mt-5"
+            class="ml-24 mb-10"
             v-for="(navItem, index) in navList"
             :key="index"
           >
@@ -50,7 +50,7 @@
            
           </li> -->
         </ul>
-        <div class="mt-5">
+        <div class="mb-10">
           <nuxt-link class="main_nav text-xl" to="/free"
             ><div class="mian_nav_text font-black text-xl">
               收費詳情
@@ -267,7 +267,7 @@ export default {
   }
   .main_footer {
     background: #f3fcfe;
-    padding: 5.5vw 0 2vw;
+    padding: 5.5vw 0 7vw;
     position: relative;
     .logo_footer {
     }
@@ -276,21 +276,24 @@ export default {
       justify-content: space-between;
       .main_menu {
         letter-spacing: 0.2vw;
+        li:nth-child(4),li:nth-child(5),li:nth-child(6){margin-bottom: 0;margin-top: 30px;}
+        
         .child_menu {
           li {
-            margin: 20px 0;
+            margin: 18px 0;
             &:hover {
               color: #4570b6;
             }
           }
+          li:last-child{margin-bottom: 0;}
         }
       }
       .copyright {
         margin-top: 3vw;
         text-align: center;
-        font-size: 15px;
+        font-size: 12px;font-weight:300;
         span {
-          border-bottom: 1px solid;
+          border-bottom: 1px solid;  font-size: 12px;
         }
       }
     }

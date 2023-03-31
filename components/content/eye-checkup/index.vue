@@ -1,12 +1,15 @@
 <template>
-  <div class="page_container">
-    <div class="flex justify-center md:mt-14 mt-10">
+ <div class="page_container">
+
+ 
+
+    <div class="flex justify-center md:mt-14 mt-10">   
       <h2>預約術前眼睛檢查</h2>
     </div>
     <div class="jianc">
       <div class="jianc_box">
         <div class="box_text">
-          <h3><center>線上預約術前眼睛檢查</center></h3>
+          <h3>線上預約術前眼睛檢查</h3>
           <p>
             請注意:
             到診檢查前，應停止佩戴隱形眼鏡，防止角膜被擠壓，影響量度數據。
@@ -31,16 +34,16 @@
             術前眼睛檢查費用︰星期一至六 $100<br />
             *若成功預約矯視，會退回術前檢查費用<br />
           </p>
-          <center class="btn">
+          
             <a
-              class="gtm-yysqjj"
+              class="gtm-yysqjj btn"
               href=" https://wa.me/85260610511"
               target="_blank"
               ><span
                 ><button class="button_size_4">立即WhatsApp預約</button></span
               ></a
             >
-          </center>
+          
         </div>
         <div class="box_img">
           <img
@@ -54,12 +57,15 @@
 </template>
 
 <script>
+
+ 
 export default {
   data() {
     return {};
   },
   created() {},
   methods: {},
+ 
 };
 </script>
 
@@ -78,7 +84,7 @@ h2 {
     button {
       margin-top: 60px;
       color: #fff;
-      background-color: #0d508b !important;
+      background: linear-gradient(90.24deg, #4B7BBC 10.22%, #7ED7EA 100%);
       display: inline-block;
       padding: 11px 20px;
       margin-bottom: 15px;

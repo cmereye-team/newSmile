@@ -4,7 +4,7 @@
       <h2>矯視服務</h2>
     </div> -->
     <div class="smileService">
-      <div class="smileSerItem">
+      <div class="smileSerItem group">
         <a
           href="/vision-correction/relex-smile/"
           target="_blank"
@@ -14,14 +14,14 @@
           <p>1000 度近視<br />500 度散光</p>
           <span class="morelink">了解更多</span>
           <img
-            class="morelink_img transition duration-500 ease-in-out transform hover:translate-x-3"
+            class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
             src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png"
             alt=""
           />
         </a>
       </div>
 
-      <div class="smileSerItem">
+      <div class="smileSerItem group">
         <a
           href="/vision-correction-lasik/"
           target="_blank"
@@ -34,14 +34,14 @@
           </p>
           <span class="morelink">了解更多</span>
           <img
-            class="morelink_img transition duration-500 ease-in-out transform hover:translate-x-3"
+            class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
             src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png"
             alt=""
           />
         </a>
       </div>
 
-      <div class="smileSerItem">
+      <div class="smileSerItem group">
         <a
           href="/vision-correction-icl/"
           target="_blank"
@@ -51,14 +51,14 @@
           <p>1800 度近視<br />1000 度遠視<br />600 度散光</p>
           <span class="morelink">了解更多</span>
           <img
-            class="morelink_img transition duration-500 ease-in-out transform hover:translate-x-3"
+            class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
             src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png"
             alt=""
           />
         </a>
       </div>
 
-      <div class="smileSerItem">
+      <div class="smileSerItem group">
         <a
           href="/vision-correction-presbyopia/"
           target="_blank"
@@ -68,7 +68,7 @@
           <p>39 歲以上<br />同時有近視／遠視／<br />散光問題</p>
           <span class="morelink">了解更多</span>
           <img
-            class="morelink_img transition duration-500 ease-in-out transform hover:translate-x-3"
+            class="morelink_img transition duration-500 ease-in-out transform group-hover:translate-x-3"
             src="https://static.cmereye.com/imgs/2023/03/8462fdf2330efa37.png"
             alt=""
           />
@@ -128,8 +128,8 @@ export default {
 
 .smileService .smileSerItem h3 {
   position: absolute;
-  top: -32px;
-  left: -43px;
+  top: -40px;
+  left: -40px;
   font-family: "Baskervville" !important;
   letter-spacing: 1px;
   font-style: normal;
@@ -147,8 +147,8 @@ export default {
 }
 
 .smileService .smileSerItem p {
-  font-family: "Inter";
-  font-style: normal;
+  font-family: 'Inter', sans-serif;
+  
   font-weight: 300;
   font-size: 20px;
   line-height: 35px;
@@ -198,12 +198,12 @@ export default {
     font-size: 20px !important;
   }
   .section {
-    margin-top: 70px;
+    margin-top: 85px;
   }
 }
 @media only screen and (max-width: 768px) {
   .smileService .smileSerItem p {
-    font-family: "Inter";
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;

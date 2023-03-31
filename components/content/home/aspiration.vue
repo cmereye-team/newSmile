@@ -7,9 +7,9 @@
       <div class="serve_title">
         <p>用戶心聲</p>
       </div>
-      <div class="heart-box-1">
+      <div class="heart-box heart-box-1">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/7d3695d82cca797e.jpg"
+          src="https://static.cmereye.com/imgs/2023/03/af4243c0c7cd2fdd.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -21,9 +21,9 @@
           </div>
         </div>
       </div>
-      <div class="heart-box-2">
+      <div class="heart-box heart-box-2">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/82809e728f70f6bc.jpg"
+          src="https://static.cmereye.com/imgs/2023/03/5d0bbb754eb6eab3.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -35,9 +35,9 @@
           </div>
         </div>
       </div>
-      <div class="heart-box-3">
+      <div class="heart-box heart-box-3">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/4ca3d34ccc569850.jpg"
+          src="https://static.cmereye.com/imgs/2023/03/c1bad1b15160015c.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -49,9 +49,9 @@
           </div>
         </div>
       </div>
-      <div class="heart-box-4">
+      <div class="heart-box heart-box-4">
         <img
-          src="https://static.cmereye.com/imgs/2023/01/bbe65cfecda34628.jpg"
+          src="https://static.cmereye.com/imgs/2023/03/53b6a1a03344c084.jpg"
           alt=""
         />
         <div class="heart-text">
@@ -128,7 +128,8 @@ export default {
       z-index: 66;
       margin-left: 36px;
       position: absolute;
-      top: -56px;
+      top: -55px;
+      letter-spacing: 0.05em;
     }
   }
   .serve_title {
@@ -137,11 +138,11 @@ export default {
       font-style: normal;
       font-weight: 400;
       font-size: 43px !important;
-      line-height: 55px;
+      line-height: 62px;
       display: flex;
       align-items: center;
 
-      letter-spacing: 11px;
+      letter-spacing: 18px;
 
       background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
       -webkit-background-clip: text;
@@ -161,7 +162,7 @@ export default {
     font-size: 18px !important;
   }
   p {
-    font-size: 18px !important;
+    font-size: 18px;
   }
   .title_heart {
     h2 {
@@ -179,13 +180,15 @@ export default {
     height: 405px;
     margin-left: 54px;
   }
+
   .heart-box-1 {
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
+    left: -7px;
     .heart-text {
       position: absolute;
-      bottom: 41px;
-      left: -32px;
+      bottom: 46px;
+      left: -44px;
       z-index: 10;
       .person {
         z-index: 10;
@@ -207,7 +210,8 @@ export default {
       .box {
         padding: 10px;
         border-bottom: 1px solid #5a93c9;
-        width: 194px;
+        width: 235px;
+    height: 70px;
 
         line-height: 18px;
 
@@ -223,7 +227,7 @@ export default {
           font-weight: 300;
           font-size: 12px;
           line-height: 25px;
-          text-align: center;
+          text-align: left;
           letter-spacing: 0.06em;
 
           color: #6d6e71;
@@ -233,13 +237,13 @@ export default {
   }
   .heart-box-2 {
     position: absolute;
-    top: 0;
-    left: 330px;
+    top: 0px;
+    left: 304px;
     .heart-text {
       position: absolute;
-      right: -70px;
+      right: -118px;
       z-index: 10;
-      top: 40px;
+      top: 28px;
       .person {
         z-index: 10;
       }
@@ -260,7 +264,7 @@ export default {
       .box {
         border-bottom: 1px solid #5a93c9;
         padding: 10px;
-        width: 147px;
+        width: 160px;
 
         line-height: 18px;
 
@@ -268,7 +272,7 @@ export default {
         bottom: 28px;
         background: #fff;
 
-        left: -39px;
+        left: -46px;
 
         z-index: -1;
         span {
@@ -287,12 +291,12 @@ export default {
   }
   .heart-box-3 {
     position: absolute;
-    bottom: 0;
-    right: 330px;
+    bottom: 45px;
+    right: 305px;
     .heart-text {
       position: absolute;
-      bottom: 41px;
-      left: -32px;
+      bottom: 21px;
+      left: -56px;
       z-index: 10;
       .person {
         z-index: 10;
@@ -314,7 +318,7 @@ export default {
       .box {
         padding: 10px;
         border-bottom: 1px solid #5a93c9;
-        width: 176px;
+        width: 180px;
 
         line-height: 18px;
 
@@ -322,7 +326,7 @@ export default {
         top: 0;
         margin-top: 28px;
         background: #fff;
-        left: 28px;
+        left: 83px;
         z-index: -1;
         span {
           font-family: "Inter";
@@ -341,12 +345,12 @@ export default {
   .heart-box-4 {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: -16px;
     .heart-text {
       position: absolute;
 
       z-index: 10;
-      top: 87px;
+      top: 28px;
       left: -67px;
       .person {
         z-index: 10;
@@ -358,12 +362,12 @@ export default {
         font-size: 12px;
         line-height: 15px;
         text-align: center;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.05em;
 
         color: #ffffff;
         background: linear-gradient(91.62deg, #5992c8 6.27%, #81dbec 99.02%);
         width: max-content;
-        padding: 7px;
+        padding: 7px 4px;
       }
       .box {
         padding: 10px;
@@ -391,6 +395,10 @@ export default {
       }
     }
   }
+
+  .heart-box .heart-text .person p{height: 32px; display: flex; align-items: center;font-size: 20px;}
+  .heart-box .heart-text .box span{text-align: left;}
+
 }
 
 @media only screen and (max-width: 768px) {

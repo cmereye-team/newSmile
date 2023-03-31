@@ -1,5 +1,7 @@
 <template>
   <div class="section_header page_container px-0">
+    
+
     <div class="header flex-between">
       <div class="left">
         <nuxt-link to="/">
@@ -192,9 +194,22 @@
         </a>
       </div>
     </div>
+
+  
+    <div class="ball"></div>
+
+  </div>
+
   </div>
 </template>
 <script>
+// gsap plugins
+import gsap from 'gsap'
+ 
+
+ 
+
+
 export default {
   data() {
     return {
@@ -231,7 +246,7 @@ export default {
       navList: [
         {
           main_nav: "關於希瑪",
-          link: "#",
+          link: "",
           child_list: [
             {
               child_item: "· 集團及中心簡介",
@@ -249,7 +264,7 @@ export default {
         },
         {
           main_nav: "矯視服務",
-          link: "#",
+          link: "",
           child_list: [
             {
               child_item: "· SMILE 微笑激光矯視",
@@ -271,7 +286,7 @@ export default {
         },
         {
           main_nav: "診症須知",
-          link: "#",
+          link: "",
           child_list: [
             {
               child_item: "· 眼睛檢查及矯視前",
@@ -289,7 +304,7 @@ export default {
         },
         {
           main_nav: "常見問題",
-          link: "#",
+          link: "",
           child_list: [
             {
               child_item: "· SMILE 微笑激光矯視",
@@ -311,7 +326,7 @@ export default {
         },
         {
           main_nav: "眼科資訊",
-          link: "#",
+          link: "",
           child_list: [
             {
               child_item: "· 個案分享及矯視資訊影片",
@@ -350,17 +365,100 @@ export default {
   created() {
     this.handleSelect();
   },
+  mounted() {
+    this.pointinit();
+  },
+  onMounted(){
+
+},
   methods: {
+    pointinit(){
+      
+ // mousemove ball 
+ // 指针小球跟随效果
+ gsap.set(".ball", {xPercent: -65, yPercent: -65});
+ const ball = document.querySelector(".ball");
+ const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+ const mouse = { x: pos.x, y: pos.y };
+ const speed = 0.35;
+ const xSet = gsap.quickSetter(ball, "x", "px");
+ const ySet = gsap.quickSetter(ball, "y", "px");
+ 
+ window.addEventListener("mousemove", e => {    
+   mouse.x = e.x;
+   mouse.y = e.y;  
+ });
+ gsap.ticker.add(() => {
+   // adjust speed for higher refresh monitors
+   const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio()); 
+   pos.x += (mouse.x - pos.x) * dt;
+   pos.y += (mouse.y - pos.y) * dt;
+   xSet(pos.x);
+   ySet(pos.y);
+ });
+ // 指针小球跟随效果 end
+ // 指针小球hover效果  **
+ const ahrefbtn = document.querySelectorAll("a");
+ ahrefbtn.forEach((a) => {
+   a.addEventListener("pointerenter", handleMouseEnter);
+   a.addEventListener("pointerleave", handleMouseLeave);
+ });
+ function handleMouseEnter() {
+   gsap.to(".ball", {
+     duration: 0.3,
+     scale: 3,
+     opacity: 0,
+     ease: "Power3.easeOut"
+   });
+ };
+ function handleMouseLeave() {
+   gsap.to(".ball", {
+     duration: 0.3,
+     scale: 1,
+     opacity: 1,
+     ease: "Power3.easeOut"
+   });
+ };
+ // 指针小球hover效果 end **
+ // mousemove ball end
+ 
+ 
+    },
+
     handleSelect(index, indexPath) {
       console.log("===", index, indexPath);
     },
+    isActive(path) {
+      const matched = this.$route.matched
+      for (let i = 0; i < matched.length; i++) {
+        if (matched[i].path === path) {
+          return true
+        }
+      }
+      return false
+    }
   },
+  
+
+
+
 };
 </script>
 <style lang="scss">
+.ball { position: fixed; pointer-events: none; z-index:9999; width: 20px; height: 20px; background-color: #f5f7fa; border-radius: 50%; mix-blend-mode: difference; left: 0;top: 0;}
+ 
+
+
+
 $active_gradient: #4570b6;
+
+
+
 // pc
 @media (min-width: 768px) {
+  .main_after .nuxt-link-active .mian_nav_text {color: #4570B6 !important;}
+
+
   .nav {
     display: flex;
     align-items: center;
@@ -402,7 +500,7 @@ $active_gradient: #4570b6;
     .main_nav .mian_nav_text {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 800;
+      font-weight: 500;
       font-size: 16px;
       line-height: 20px;
       /* identical to box height, or 125% */
@@ -426,27 +524,30 @@ $active_gradient: #4570b6;
       }
     }
   }
+
   .mian_nav_text {
-    font-family: "Noto Sans JP";
+    font-family: 'Noto Sans HK', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     /* identical to box height, or 156% */
 
     letter-spacing: 0.2em;
 
-    color: #444343;
+    color: #6D6E71;
   }
   .main_after {
     .nuxt-link-exact-active {
-      background: #444343 !important;
+      background: #6D6E71 !important;
       -webkit-background-clip: text !important;
       -webkit-text-fill-color: transparent !important;
       background-clip: text !important;
       text-fill-color: transparent !important;
     }
+    
   }
+
   .child_nav {
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.137);
@@ -457,9 +558,9 @@ $active_gradient: #4570b6;
       -webkit-text-fill-color: transparent;
     }
     a {
-      font-family: "Noto Sans JP";
+      font-family: 'Noto Sans HK', sans-serif;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 300;
       font-size: 16px;
       line-height: 25px;
       /* identical to box height, or 156% */
