@@ -115,7 +115,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     font-size: 43px;
-    line-height: 43px;
+    line-height: 62px;
     display: flex;
     align-items: center;
     letter-spacing: 16px;
@@ -128,7 +128,7 @@ h2 {
     writing-mode: tb-rl;
     position: absolute;
     top: 16px;
-    left: 0;
+    left: -11px;
   }
   .more-btn {
     display: flex;

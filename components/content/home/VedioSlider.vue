@@ -309,7 +309,7 @@ body .gradient_font {
     font-style: normal;
     font-weight: 400;
     font-size: 43px;
-    line-height: 43px;
+    line-height: 62px;
     display: flex;
     align-items: center;
     letter-spacing: 16px;
@@ -324,7 +324,7 @@ body .gradient_font {
 
     top: 88px;
 
-    left: 0;
+    left: -11px;
   }
   .swiperWrap {
     padding: 34px 50px;
@@ -378,12 +378,12 @@ body .gradient_font {
   .video_title {
     font-family: "Noto Sans HK";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 28px;
-    line-height: 41px;
-    display: flex;
+  
+    display: flex;  
     align-items: center;
-    letter-spacing: 0.06em;
+    
 
     background: linear-gradient(177.58deg, #4b7bbc -6%, #7ed7ea 101.5%);
     -webkit-background-clip: text;
@@ -396,6 +396,7 @@ body .gradient_font {
     top: 51px;
 
     left: 30px;
+     p{    letter-spacing: 11px;}
   }
   .swiper-slide {
     height: auto !important;

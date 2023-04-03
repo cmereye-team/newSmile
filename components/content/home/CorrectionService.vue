@@ -206,7 +206,7 @@ export default {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 17px;
     line-height: 28px;
     /* or 233% */
 
@@ -239,15 +239,17 @@ export default {
     margin-top: 50px;
   }
   .smileService .smileSerItem {
-    width: 50%;
-    height: 35vw;
-    margin-bottom: 70px;
+    width: 65%;
+    height: 42vw;
+    margin-bottom: 90px;transform: translateX(20px);
   }
+  .smileService .smileSerItem:nth-child(1){margin-top: 25px;}
+  .smileService .smileSerItem:last-child{margin-bottom: 55px;}
 
   .smileService .smileSerItem h3 {
-    top: -6vw;
-    left: -4vw;
-    font-size: 35px;
+    top: -9vw;
+    left: -11vw;
+    font-size: 50px;
   }
 
   .smileService .smileSerItem .morelink {

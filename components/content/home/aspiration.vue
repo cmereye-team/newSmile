@@ -404,7 +404,7 @@ export default {
 @media only screen and (max-width: 768px) {
   .page_box {
     position: relative;
-    margin-top: 100px;
+    margin-top: 83px;
   }
   .booking {
     p {
@@ -420,15 +420,15 @@ export default {
       margin-bottom: 20px;
       margin-left: 57px;
       position: absolute;
-      top: -56px;
+      top: -43px;
     }
   }
   .serve_title {
     p {
       font-family: "Noto Sans HK";
       font-style: normal;
-      font-weight: 700;
-      font-size: 38px !important;
+      font-weight: 400;
+      font-size: 28px !important;
       line-height: 55px;
       display: flex;
       align-items: center;
@@ -457,13 +457,15 @@ export default {
     height: 308vw;
     flex-direction: column;
   }
+  .heart-box>img{width: 60.7vw;}
   .heart-box-1 {
     position: absolute;
-    right: 0;
+    right: 10px;
+    top: 40px; 
     .heart-text {
       position: absolute;
-      bottom: 41px;
-      left: -32px;
+      bottom: 36px;
+      left: -94px;
       z-index: 10;
       .person {
         z-index: 10;
@@ -508,12 +510,13 @@ export default {
   .heart-box-2 {
     position: absolute;
     top: 85vw;
-    left: 0;
+    left: 17vw;
     .heart-text {
       position: absolute;
-      right: -70px;
+      right: -9vw;
       z-index: 10;
-      top: 40px;
+      bottom: -5vw;display:flex;
+      flex-direction: column-reverse;
       .person {
         z-index: 10;
       }
@@ -521,11 +524,11 @@ export default {
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 3vw;
         line-height: 15px;
         text-align: center;
         letter-spacing: 0.06em;
-
+        transform: translateX(25px);
         color: #ffffff;
         background: linear-gradient(91.62deg, #5992c8 6.27%, #81dbec 99.02%);
         width: max-content;
@@ -534,11 +537,11 @@ export default {
       .box {
         padding: 6px;
         border-bottom: 1px solid #5a93c9;
-        width: 123px;
-        position: absolute;
-        top: -57px;
+        width: 25vw;
+      
+    
         background: #fff;
-        left: -51px;
+       
         z-index: -1;
         span {
           font-family: "Inter";
@@ -557,14 +560,14 @@ export default {
   .heart-box-3 {
     position: absolute;
     top: 164vw;
-    right: 0px;
-    left: 0;
+    right: 10px;
+    
     display: flex;
     justify-content: center;
     .heart-text {
       position: absolute;
-      bottom: 41px;
-      left: 17px;
+      bottom: 17px;
+      left: -15vw;
       z-index: 10;
       .person {
         z-index: 10;
@@ -586,7 +589,7 @@ export default {
       .box {
         padding: 6px;
         border-bottom: 1px solid #5a93c9;
-        width: 160px;
+        width: 30.5vw;
         position: absolute;
         top: 25px;
         background: #fff;
@@ -609,13 +612,15 @@ export default {
   .heart-box-4 {
     position: absolute;
     bottom: 0;
-    right: 0px;
+    left: 13vw;
     .heart-text {
       position: absolute;
-
+      display: flex;
+      flex-flow: column;
+      bottom: -8vw;
+    left: -4vw;
       z-index: 10;
-      top: 87px;
-      left: -37px;
+      
       .person {
         z-index: 10;
       }
@@ -627,7 +632,7 @@ export default {
         line-height: 15px;
         text-align: center;
         letter-spacing: 0.06em;
-
+        transform: translateX(-6vw);
         color: #ffffff;
         background: linear-gradient(91.62deg, #5992c8 6.27%, #81dbec 99.02%);
         width: max-content;
@@ -637,7 +642,7 @@ export default {
         padding: 6px;
         border-bottom: 1px solid #5a93c9;
         width: 132px;
-        position: absolute;
+     
         top: -54px;
         background: #fff;
         left: -51px;
